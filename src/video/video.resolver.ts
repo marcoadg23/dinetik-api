@@ -2,6 +2,8 @@ import { Resolver, Query, Mutation, Args } from '@nestjs/graphql';
 import { Video } from './video.model';
 import { VideoService } from './video.service';
 import { VideoFiltersInput } from './dto/video-filters.input';
+import * as crypto from 'crypto';
+
 
 @Resolver(() => Video)
 export class VideoResolver {

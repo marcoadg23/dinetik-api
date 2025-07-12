@@ -8,7 +8,6 @@ const users = []; // Simulación de base de datos
 @Injectable()
 export class AuthService {
 
-    // src/auth/auth.service.ts
     private JWT_SECRET = 'dinetik_super_secreta';
     private users: User[] = []; //simula usuarios
 
